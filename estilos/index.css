@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: serif;
 }
 
 header {
@@ -89,7 +94,7 @@ p {
     height: 10px;
     background-color: #999;
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 5px 40px 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -111,13 +116,24 @@ p {
     flex-direction: row;
     background-color: #1C5D8C;
     color: white;
+    height: 210px;
     margin-left: 10vw;
     margin-right: 10vw;
+    border-radius: 20px;
+    margin-bottom: 50px;
 }
 
 #mel img {
-    width: 70%;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -5px;
+    width: 20%;
     height: auto;
+}
+
+#mel div {
+    margin-left: 27%;
+    margin-right: 2%;
 }
 
 ul {
@@ -139,7 +155,6 @@ body {
     gap: 40px;
     margin-left: 10vw;
     margin-right: 10vw;
-
 }
 
 #medio a {
@@ -167,20 +182,20 @@ body {
     text-align: center;
 }
 
-#calendario {
-    display: flex;
-    flex-direction: column;
+ul {
+    list-style-type: none;
 }
-
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
 
 /* Month header */
 .month {
+  border-radius: 20px 20px 0 0;
   padding: 30px 0px 30px 0px;
   width: 100%;
-  background: #1C5D8C;
+  color: black;
+  background: white;
   text-align: center;
+  border: 0.5px solid black;
+
 }
 
 /* Month list */
@@ -190,7 +205,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .month ul li {
-  color: white;
+  color: black;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -217,20 +232,23 @@ body {font-family: Verdana, sans-serif;}
     justify-content: space-between;
     margin: 0;
     padding: 10px 0;
-    background-color:#ddd;
+    background-color:white;
+    border: 1px solid black;
 }
 
 .weekdays li {
   width: 13.6%;
-  color: #666;
+  color: black;
   text-align: center;
 }
 
 /* Days (1-31) */
 .days {
+    
+  border-radius: 0 0 20px 20px;
   padding: 10px 0;
-  background: #eee;
   margin: 0;
+  border: 0.5px solid black;
 }
 
 .days li {
@@ -240,7 +258,7 @@ body {font-family: Verdana, sans-serif;}
   text-align: center;
   margin-bottom: 5px;
   font-size:12px;
-  color: #777;
+  color: black;
 }
 
 /* Highlight the "current" day */
@@ -250,38 +268,43 @@ body {font-family: Verdana, sans-serif;}
   color: white !important
 }
 
+
 #about {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#about div {
-    flex: 1;
-    padding-right: 20px;
-}
-
-#about h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-#about p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #1C5D8C;
+    color: white;
+    height: 210px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 20px;
+    margin-top: 70px;
 }
 
 #about img {
-    max-width: 300px;
+    position: absolute;
+    margin-top: -15px;
+    margin-right: -5px;
+    width: 20%;
     height: auto;
-    border-radius: 8px;
+    padding-bottom: 20px;
+}
+
+#about div {
+    margin-right: 27%;
+    margin-left: 2%;
+}
+
+#about>div>h3 {
+    margin-top: 40px;
+    margin-left: 0px;
+}
+
+main>h3 {
+    margin-top: 80px;
+    font-size: 20px;
 }
 
 #cn {
@@ -327,7 +350,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding-inline: 10em;
-    font-size: 1.3em;
+    font-size: 1em;
     padding-block: 4em;
 }
 
@@ -348,14 +371,11 @@ footer article ul li {
 footer article ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 1.3em;
 }
 
 footer article p {
     text-decoration: none;
     color: #000;
-    font-size: 1.3em;
-
 }
 
 
