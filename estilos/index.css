@@ -1,60 +1,361 @@
+body {
+    margin: 0;
+}
+
 header {
     background-color: #EDDB1C;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    gap: 23vw;
+}
+
+header img {
+    width: auto;
+    height: 80px;
+    margin-left: 10vw;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 8vw;
+    margin-right: 10vw;
 }
 
 #titulo {
-    background-image: url(/assets/images/harvard-university-cambridge-usa\ 1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 30vh;
-    width: 100vh;
-    opacity: 0.5;
-    filter: brightness(60%);
-
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+    min-height: 500px;
+    background: radial-gradient(rgb(0, 0, 0, .6), rgb(0, 0, 0, .6)),url('../assets/images/harvard-university-cambridge-usa\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #titulo h1 {
-    font-size: 3em;
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    font-weight: 500;
+}
+
+main h3 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#community {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+article {
+    background-color: #1C5D8C;
     color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+#puntos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#puntos div {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#puntos div:first-child {
+    background-color: black;
+}
+
+#puntos div:nth-child(2) {
+    background-color: #80A4BE;
+}
+
+#puntos div:last-child {
+    background-color: #80A4BE;
+}
+
+#mel {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: #1C5D8C;
+    color: white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#mel img {
+    width: 70%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+#medio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+
+#medio a {
+    display: inline-block;
+    background-color: #175a92;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
 }
 
 
-#calendar { 
-    font-family:Arial;
-    font-size:12px;
+#botons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
-#calendar caption {
-    text-align:left;
-    padding:5px 10px; 
-    background-color:#003366;
-    color:#fff;
-    font-weight:bold;
-    font-size:medium;
+
+#botons article {
+    width: 100%;
+    text-align: center;
 }
-#calendar caption div:nth-child(1) {
-    float:left;
+
+#calendario {
+    display: flex;
+    flex-direction: column;
 }
-#calendar caption div:nth-child(2) {
-    float:right;
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 30px 0px 30px 0px;
+  width: 100%;
+  background: #1C5D8C;
+  text-align: center;
 }
-#calendar caption div:nth-child(2) a {
-    cursor:pointer;
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
 }
-#calendar th {
-    background-color:#006699;
-    color:#fff;width:40px;
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
-#calendar td {
-    text-align:right;
-    padding:2px 5px;
-    background-color:silver;
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+  padding-left: 20px;
 }
-#calendar .hoy {
-    background-color:red;
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
 }
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.45%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1C5D8C;
+  color: white !important
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#about div {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#about img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#cn {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 20px;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+}
+
+#cn article {
+    background-color: #1C5D8C;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#cn h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#cn a {
+    color: white;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #EDDB1C;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 10em;
+    font-size: 1.3em;
+    padding-block: 4em;
+}
+
+footer article {
+    background-color: #EDDB1C;
+    border: none;
+    box-shadow: none;
+}
+
+footer article img {
+    width: 5em;
+}
+
+footer article ul li {
+    list-style: none;
+}
+
+footer article ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+}
+
+footer article p {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3em;
+
+}
+
+
