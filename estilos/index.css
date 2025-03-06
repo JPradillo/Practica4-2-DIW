@@ -26,7 +26,7 @@ header nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 8vw;
+    gap: 9vw;
     margin-right: 10vw;
 }
 
@@ -48,7 +48,7 @@ header nav ul {
     font-weight: 500;
 }
 
-main h3 {
+main h2 {
     margin-left: 10vw;
     margin-right: 10vw;
     font-size: 1.5em;
@@ -72,7 +72,7 @@ article {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-h4 {
+h3 {
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
@@ -121,6 +121,11 @@ p {
     margin-right: 10vw;
     border-radius: 20px;
     margin-bottom: 50px;
+}
+
+#mel h2 {
+    margin-left: 0;
+    margin-top: 20px;
 }
 
 #mel img {
@@ -297,12 +302,12 @@ ul {
     margin-left: 2%;
 }
 
-#about>div>h3 {
+#about>div>h2 {
     margin-top: 40px;
     margin-left: 0px;
 }
 
-main>h3 {
+main>h2 {
     margin-top: 80px;
     font-size: 20px;
 }
@@ -327,7 +332,7 @@ main>h3 {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-#cn h3 {
+#cn h2 {
     font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 10px;
@@ -350,7 +355,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding-inline: 10em;
-    font-size: 1em;
+    font-size: 1.2em;
     padding-block: 4em;
 }
 
@@ -366,6 +371,8 @@ footer article img {
 
 footer article ul li {
     list-style: none;
+    padding-bottom: 1.5rem;
+    padding: 20px;
 }
 
 footer article ul li a {
